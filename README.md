@@ -77,13 +77,13 @@ Command:
 
 
 Explanation:
--r: Recursively copies all files and directories from the source.
+**-r:** Recursively copies all files and directories from the source.
 
-user@remote_host: Specifies the user_name and remote server’s address or ip add
+**/path/to/local/directory/:** means source directory or master ec2 instance path
 
-/path/to/local/directory/: means source directory or master ec2 instance path
+**user@remote_host:** Specifies the user_name and remote server’s address or ip add
 
-/path/to/remote/destination/ : destination path or node ec2 instance path
+**/path/to/remote/destination/ :** destination path or node ec2 instance path
 
 
 
