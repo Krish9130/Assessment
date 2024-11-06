@@ -5,7 +5,6 @@ Description: This Ansible playbook copies a specified file from your control nod
 ##### https://github.com/Krish9130/Assessment/blob/main/copy_file_to_hosts.yml
 
 
-
 ### 2. How to loop over a list in Ansible?
 Description: In Ansible, you can loop over items using the with_items keyword or loop. Here’s an example that installs multiple packages.
 
@@ -19,41 +18,19 @@ append(item): Adds item as a single element to the end of the list.
 extend(iterable): Adds each element of an iterable (e.g., another list) to the end of the list.
 Example:
 
-#Using append
-my_list = [1, 2, 3]
-my_list.append([4, 5])
-print(my_list)  # Output: [1, 2, 3, [4, 5]]
-
-#Using extend
-my_list = [1, 2, 3]
-my_list.extend([4, 5])
-print(my_list)  # Output: [1, 2, 3, 4, 5]
+##### https://github.com/Krish9130/Assessment/blob/main/append_extend.py
 
 
 ### 4. Write a Python program to sort a list of tuples based on the second element.
 Description: Sort a list of tuples by the second element in each tuple.
-# Sample list of tuples
-my_list = [(1, 'apple'), (3, 'banana'), (2, 'cherry')]
 
-#Sorting by the second element
-sorted_list = sorted(my_list, key=lambda x: x[1])
-print(sorted_list)
-
-
-
+##### https://github.com/Krish9130/Assessment/blob/main/sort_tuple_inlist.py
 
 
 ### 5. Write a Docker file to create an Apache server.
 Description: This Dockerfile creates a containerized Apache server.
-#Use an official Apache HTTP Server image
-FROM httpd:latest
 
-#Copy a custom HTML file to the server's default directory
-COPY ./index.html /usr/local/apache2/htdocs/
-
-#Expose port 80
-EXPOSE 80
-
+##### https://github.com/Krish9130/Assessment/blob/main/Dockerfile
 
 
 
