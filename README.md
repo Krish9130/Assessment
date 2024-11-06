@@ -93,11 +93,13 @@ Commands:
 View running processes:
 
 **$ ps aux**
-  or 
+  
+    or 
+  
 **top**
+
 
 Check memory usage:
 
-
-**free -h**
+**$ free -h**
 
