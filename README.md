@@ -94,6 +94,9 @@ View running processes:
 
 **$ ps aux**
 
+or
+
+**top**
 
 Check memory usage:
 
