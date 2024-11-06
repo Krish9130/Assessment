@@ -59,6 +59,7 @@ Stop a container:
 
 
 ### 8. How do you create an S3 bucket using AWS CLI?
+      Ensure you have set up your AWS credentials using the **aws configure** command, which will store your access key, secret key, region, and output format.
 Command:
 
 **$ aws s3 mb s3://my-bucket-name**
