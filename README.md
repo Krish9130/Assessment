@@ -39,46 +39,50 @@ Description: This Dockerfile creates a containerized Apache server.
 Commands:
 Running containers:
 
-**docker ps**
+**$ docker ps**
 
 All containers (including stopped):
 
-**docker ps -a**
+**$ docker ps -a**
 
 
 ### 7. How to start and stop the container?
 Commands:
 Start a container:
 
-
-**docker start <container_id_or_name>**
+**$ docker start <container_id_or_name>**
 
 Stop a container:
 
-
-**docker stop <container_id_or_name>**
+**$ docker stop <container_id_or_name>**
 
 
 
 ### 8. How do you create an S3 bucket using AWS CLI?
 Command:
-**aws s3 mb s3://my-bucket-name**
+
+**$ aws s3 mb s3://my-bucket-name**
 
 
 
 
 ### Q9. SSH Command to Copy All Files from Local Directory to Remote Server
 Command:
-**scp -r /path/to/local/directory/ user@remote_host:/path/to/remote/destination/**
+
+**$ scp -r /path/to/local/directory/ user@remote_host:/path/to/remote/destination/**
 
 #For example
+
 #scp -r /home/ubuntu/ ubuntu@25.54.34.211:/opt/
 
 
 Explanation:
 -r: Recursively copies all files and directories from the source.
-user@remote_host: Specifies the user_name and remote server’s address or ip add.
+
+user@remote_host: Specifies the user_name and remote server’s address or ip add
+
 /path/to/local/directory/: means source directory or master ec2 instance path
+
 /path/to/remote/destination/ : destination path or node ec2 instance path
 
 
@@ -87,8 +91,8 @@ user@remote_host: Specifies the user_name and remote server’s address or ip ad
 ### Q10. View Running Processes and Check Memory Usage on a Linux System
 Commands:
 View running processes:
-**ps aux**
 
+**$ ps aux**
 
 
 Check memory usage:
