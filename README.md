@@ -2,7 +2,7 @@
 ### 1. Write an Ansible playbook to copy a file to multiple hosts.
 Description: This Ansible playbook copies a specified file from your control node to multiple remote hosts. Ansible simplifies the process by using copy or synchronize modules.
 
-copy_file_to_hosts.yml
+### copy_file_to_hosts.yml
 
 
 
