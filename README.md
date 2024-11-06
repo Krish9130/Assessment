@@ -65,13 +65,15 @@ Ensure you have set up your AWS credentials using the aws configure command, whi
 
 Command:
 
+**To make New Bucket**
+
      $ aws s3 mb s3://my-bucket-name
 
 
 
 
 ### Q9. SSH Command to Copy All Files from Local Directory to Remote Server
-Command:
+**Command for copy all file from Local Directory to Remote server using SSH:**
 
      $ scp -r /path/to/local/directory/ user@remote_host:/path/to/remote/destination/
 
@@ -94,7 +96,7 @@ Explanation:
 
 ### Q10. View Running Processes and Check Memory Usage on a Linux System
 Commands:
-View running processes:
+**View running processes:**
 
      $ ps aux
   
@@ -103,7 +105,7 @@ View running processes:
      $ top
 
 
-Check memory usage:
+**Check memory usage:**
 
      $ free -h
 
