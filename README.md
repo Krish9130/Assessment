@@ -2,14 +2,14 @@
 ### 1. Write an Ansible playbook to copy a file to multiple hosts.
 Description: This Ansible playbook copies a specified file from your control node to multiple remote hosts. Ansible simplifies the process by using copy or synchronize modules.
 
-### https://github.com/Krish9130/Assessment/blob/main/copy_file_to_hosts.yml
+##### https://github.com/Krish9130/Assessment/blob/main/copy_file_to_hosts.yml
 
 
 
 ### 2. How to loop over a list in Ansible?
 Description: In Ansible, you can loop over items using the with_items keyword or loop. Here’s an example that installs multiple packages.
 
-copy_file_to_hosts.yml
+##### https://github.com/Krish9130/Assessment/blob/main/copy_file_to_hosts.yml
 
 
 ### 3.Explain the difference between append() and extend() methods for a list. Provide examples.
