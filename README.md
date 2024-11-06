@@ -103,5 +103,5 @@ View running processes:
 
 Check memory usage:
 
-   free -h
+      free -h
 
