@@ -39,32 +39,31 @@ Description: This Dockerfile creates a containerized Apache server.
 Commands:
 Running containers:
 
-**$ docker ps**
+ **$ docker ps**
 
 All containers (including stopped):
 
-**$ docker ps -a**
+ **$ docker ps -a**
 
 
 ### 7. How to start and stop the container?
 Commands:
 Start a container:
 
-**$ docker start <container_id_or_name>**
+ **$ docker start <container_id_or_name>**
 
 Stop a container:
 
-**$ docker stop <container_id_or_name>**
+ **$ docker stop <container_id_or_name>**
 
 
 
 ### 8. How do you create an S3 bucket using AWS CLI
-
-      Ensure you have set up your AWS credentials using the aws configure command, which will store your access key, secret key, region, and output format.
+Ensure you have set up your AWS credentials using the aws configure command, which will store your access key, secret key, region, and output format.
       
 Command:
 
-**$ aws s3 mb s3://my-bucket-name**
+ **$ aws s3 mb s3://my-bucket-name**
 
 
 
@@ -72,7 +71,7 @@ Command:
 ### Q9. SSH Command to Copy All Files from Local Directory to Remote Server
 Command:
 
-**$ scp -r /path/to/local/directory/ user@remote_host:/path/to/remote/destination/**
+ **$ scp -r /path/to/local/directory/ user@remote_host:/path/to/remote/destination/**
 
 #For example
 
@@ -95,14 +94,14 @@ Explanation:
 Commands:
 View running processes:
 
-**$ ps aux**
+  **$ ps aux**
   
-    or 
+  or 
   
-**top**
+  **top**
 
 
 Check memory usage:
 
-**$ free -h**
+  **$ free -h**
 
