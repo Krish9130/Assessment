@@ -1,0 +1,15 @@
+---
+- name: Install packages on remote hosts
+  hosts: all
+  become: yes
+  tasks:
+    - name: Install multiple packages
+      ansible.builtin.yum:
+        name: "{{ item }}"
+        state: present
+      loop:
+        - git
+        - nginx
+        - vim
+
+
