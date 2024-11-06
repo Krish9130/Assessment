@@ -2,38 +2,14 @@
 ### 1. Write an Ansible playbook to copy a file to multiple hosts.
 Description: This Ansible playbook copies a specified file from your control node to multiple remote hosts. Ansible simplifies the process by using copy or synchronize modules.
 
-
-**---
-- name: Copy a file to multiple hosts
-  hosts: all
-  become: yes
-  tasks:
-    - name: Copy a file to remote hosts
-      ansible.builtin.copy:
-        src: /path/to/local/file.txt
-        dest: /path/to/remote/destination/file.txt
-        owner: root
-        group: root
-        mode: '0644'**
+copy_file_to_hosts.yml
 
 
 
 ### 2. How to loop over a list in Ansible?
 Description: In Ansible, you can loop over items using the with_items keyword or loop. Here’s an example that installs multiple packages.
 
----
-- name: Install packages on remote hosts
-  hosts: all
-  become: yes
-  tasks:
-    - name: Install multiple packages
-      ansible.builtin.yum:
-        name: "{{ item }}"
-        state: present
-      loop:
-        - git
-        - nginx
-        - vim
+copy_file_to_hosts.yml
 
 
 ### 3.Explain the difference between append() and extend() methods for a list. Provide examples.
@@ -87,12 +63,10 @@ Commands:
 Running containers:
 
 
-docker ps
-
+**docker ps**
 
 All containers (including stopped):
-
-docker ps -a
+**docker ps -a**
 
 
 ### 7. How to start and stop the container?
