@@ -4,7 +4,7 @@
   become: yes
   tasks:
     - name: Copy a file to remote hosts
-      ansible.builtin.copy:
+      copy:
         src: /path/to/local/file.txt
         dest: /path/to/remote/destination/file.txt
         owner: root
