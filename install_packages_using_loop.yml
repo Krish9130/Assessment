@@ -3,12 +3,12 @@
   become: yes
   tasks:
     - name: Install multiple packages
-      yum:
+      apt:
         name: "{{ item }}"
         state: present
+        update_cache: yes
       loop:
         - git
         - nginx
         - vim
-
 
