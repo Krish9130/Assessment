@@ -1,9 +1,13 @@
-FROM centos:7
+FROM ubuntu 
 
-RUN yum install httpd -y
+RUN apt update 
 
-RUN yum install net-tools -y
+RUN apt install –y apache2 
 
-RUN echo "welcome to this webpage" > /var/www/html/index.html
+RUN apt install –y apache2-utils 
 
-WORKDIR /var/www/html
+RUN apt clean 
+
+EXPOSE 80
+
+CMD [“apache2ctl”, “-D”, “FOREGROUND”]
