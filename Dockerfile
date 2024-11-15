@@ -1,12 +1,9 @@
-# Use an official Apache HTTP Server image
-FROM httpd:latest
+FROM centos:7
 
-# Copy a custom HTML file to the server's default directory
-COPY ./index.html /usr/local/apache2/htdocs/
+RUN yum install httpd -y
 
-# Expose port 80
-EXPOSE 80
+RUN yum install net-tools -y
 
-# Start the NGINX web server in the foreground to prevent the container from exiting.
-# The 'daemon off;' directive ensures NGINX runs in the foreground instead of as a background process.
-CMD ["nginx", "-g", "daemon off;"]
+RUN echo "welcome to this webpage" > /var/www/html/index.html
+
+WORKDIR /var/www/html
